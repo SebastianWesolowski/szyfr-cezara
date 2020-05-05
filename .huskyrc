@@ -1,0 +1,4 @@
+"hooks": {
+  "pre-commit":"pretty-quick && ng lint && git add .",
+  "pre-push": "ng build --aot true"
+}

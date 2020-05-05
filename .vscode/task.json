@@ -1,0 +1,19 @@
+{
+  "version": "2.0.0",
+  "command": "npm",
+  "isShellCommand": true,
+  "showOutput": "always",
+  "tasks": [
+    {
+      "taskName": "ng-serve",
+      "identifier": "ng-serve",
+      "type": "npm",
+      "script": "start",
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    }
+  ]
+}
