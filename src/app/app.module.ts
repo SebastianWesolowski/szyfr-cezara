@@ -6,11 +6,12 @@ import { RouterModule } from '@angular/router';
 import { routes } from './app.routing';
 
 import { AppComponent } from './app.component';
-import { MainPageComponent } from './components/mainPageComponent/mainPageComponent.component';
+import { MainPageComponent } from './components/main-page-component/main-page-component.component';
 import { SharedModule } from './shared/shared.module';
 import { InformationPageComponent } from './components/information-page/information-page.component';
 import { DecryptionPageComponent } from './components/decryption-page/decryption-page.component';
 import { EncryptionPageComponent } from './components/encryption-page/encryption-page.component';
+import { MainMenuComponentComponent } from './components/main-menu-component/main-menu-component.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { EncryptionPageComponent } from './components/encryption-page/encryption
     MainPageComponent,
     InformationPageComponent,
     DecryptionPageComponent,
-    EncryptionPageComponent
+    EncryptionPageComponent,
+    MainMenuComponentComponent
   ],
   imports: [
     BrowserModule,
