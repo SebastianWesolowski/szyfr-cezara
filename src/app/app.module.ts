@@ -6,18 +6,31 @@ import { RouterModule } from '@angular/router';
 import { routes } from './app.routing';
 
 import { AppComponent } from './app.component';
-import { MainPageComponent } from './components/mainPageComponent/mainPageComponent.component';
+import { MainPageComponent } from './components/main-page-component/main-page-component.component';
 import { SharedModule } from './shared/shared.module';
+import { InformationPageComponent } from './components/information-page/information-page.component';
+import { DecryptionPageComponent } from './components/decryption-page/decryption-page.component';
+import { EncryptionPageComponent } from './components/encryption-page/encryption-page.component';
+import { MainMenuComponentComponent } from './components/main-menu-component/main-menu-component.component';
+
+import { MenuItemService } from './services/menu-item.service';
 
 @NgModule({
-  declarations: [AppComponent, MainPageComponent],
+  declarations: [
+    AppComponent,
+    MainPageComponent,
+    InformationPageComponent,
+    DecryptionPageComponent,
+    EncryptionPageComponent,
+    MainMenuComponentComponent
+  ],
   imports: [
     BrowserModule,
     FormsModule,
     SharedModule,
     RouterModule.forRoot(routes)
   ],
-  providers: [],
+  providers: [MenuItemService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

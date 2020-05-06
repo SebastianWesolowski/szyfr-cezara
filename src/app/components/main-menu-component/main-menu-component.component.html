@@ -1,0 +1,7 @@
+<button
+  *ngFor="let MenuItem of MenuItemList"
+  [ngClass]="activeMenuItem === MenuItem ? 'active' : ''"
+  (click)="selectMenuItem(MenuItem)"
+>
+  {{ MenuItem.displayContent }}
+</button>
