@@ -13,6 +13,8 @@ import { DecryptionPageComponent } from './components/decryption-page/decryption
 import { EncryptionPageComponent } from './components/encryption-page/encryption-page.component';
 import { MainMenuComponentComponent } from './components/main-menu-component/main-menu-component.component';
 
+import { MenuItemService } from './services/menu-item.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +30,7 @@ import { MainMenuComponentComponent } from './components/main-menu-component/mai
     SharedModule,
     RouterModule.forRoot(routes)
   ],
-  providers: [],
+  providers: [MenuItemService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

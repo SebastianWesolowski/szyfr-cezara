@@ -1,3 +1,7 @@
-<button>Informacje</button>
-<button>Zaszyfruj</button>
-<button>Odkoduj</button>
+<button
+  *ngFor="let MenuItem of MenuItemList"
+  [ngClass]="activeMenuItem === MenuItem ? 'active' : ''"
+  (click)="selectMenuItem(MenuItem)"
+>
+  {{ MenuItem.displayContent }}
+</button>
