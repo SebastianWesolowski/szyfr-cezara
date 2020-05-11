@@ -1,0 +1,15 @@
+<div class="menu-component__container">
+  <div class="menu-component__logo">
+    <img src="https://www.fillmurray.com/50/50" alt="" />
+  </div>
+
+  <nav class="menu-component__nav">
+    <button
+      *ngFor="let MenuItem of MenuItemList"
+      [routerLink]="MenuItem.link"
+      routerLinkActive="active"
+    >
+      {{ MenuItem.displayContent }}
+    </button>
+  </nav>
+</div>

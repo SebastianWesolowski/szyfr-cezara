@@ -1,0 +1,15 @@
+.active {
+  background: red;
+}
+
+.menu-component__container {
+  display: grid;
+  height: 50px;
+  grid-template-columns: 50px auto;
+  grid-gap: 40px;
+}
+
+.menu-component__nav {
+  align-items: center;
+  display: flex;
+}

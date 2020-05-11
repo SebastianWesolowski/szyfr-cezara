@@ -1,0 +1,17 @@
+@import './src/assets/colors';
+
+.content-container {
+  position: relative;
+
+  height: 620px;
+  background: $color2;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 75% 25%;
+}
+
+.content-container__image {
+  position: absolute;
+  right: -110px;
+  top: -240px;
+}
