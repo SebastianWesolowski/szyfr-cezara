@@ -7,6 +7,6 @@ import { ContentComponentComponent } from './components/content-component/conten
 @NgModule({
   imports: [CommonModule, FormsModule, ReactiveFormsModule],
   declarations: [TitleComponentComponent, ContentComponentComponent],
-  exports: [TitleComponentComponent]
+  exports: [TitleComponentComponent, ContentComponentComponent]
 })
 export class SharedModule {}

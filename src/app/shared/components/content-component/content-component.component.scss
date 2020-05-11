@@ -1,0 +1,13 @@
+@import './src/assets/colors';
+.content-component {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 147.6%;
+  /* or 27px */
+  letter-spacing: 0.06em;
+
+  color: $color4;
+  padding-bottom: 30px;
+}

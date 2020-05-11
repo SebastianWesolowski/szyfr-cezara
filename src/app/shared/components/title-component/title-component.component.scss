@@ -1,3 +1,4 @@
+@import './src/assets/colors';
 .title-component__title {
   font-family: Playfair Display;
   font-style: normal;
@@ -5,8 +6,10 @@
   font-size: 50px;
   line-height: 67px;
   letter-spacing: 0.06em;
-  color: #3f4042;
-  padding-bottom: 30px;
+  color: $color3;
+  &.mod--padding {
+    padding-bottom: 30px;
+  }
 }
 .title-component__subtitle {
   font-family: Playfair Display;
@@ -15,9 +18,9 @@
   font-size: 40px;
   line-height: 53px;
   letter-spacing: 0.06em;
-  color: #3f4042;
+  color: $color3;
   padding-bottom: 30px;
-  margin-top: -30px;
+  // margin-top: -30px;
 }
 .title-component__decoration {
   padding-bottom: 30px;
