@@ -1,1 +1,16 @@
-<p>decryption-page works!</p>
+<content-container>
+  <div content-slot>
+    <title-component title="ZASZYFRUJ" [decoration]="true"></title-component>
+    <content-component>
+      <p>
+        Wpisz widomość do zaszyfrowania
+      </p>
+    </content-component>
+    ...input
+    <title-component subtitle="WYNIKI SZYFROWANIA"></title-component>
+    ...tab
+  </div>
+  <div image-slot>
+    <img src="/assets/image/bg_image_decryption.png" />
+  </div>
+</content-container>

@@ -1,0 +1,9 @@
+.main-page__container {
+  margin: 60px;
+  display: grid;
+  grid-gap: 60px;
+}
+
+.main-page__router-outlet {
+  display: none;
+}

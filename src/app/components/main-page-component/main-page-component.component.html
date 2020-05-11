@@ -1,5 +1,7 @@
-<h1>main-page-component works!</h1>
-<main-menu-component [activeMenuItem]="activeMenuItem"></main-menu-component>
-<encryption-page></encryption-page>
+<div class="main-page__container">
+  <menu-component></menu-component>
+  <router-outlet class="main-page__router-outlet"></router-outlet>
+</div>
+<!-- <encryption-page></encryption-page>
 <decryption-page></decryption-page>
-<information-page></information-page>
+<information-page></information-page> -->

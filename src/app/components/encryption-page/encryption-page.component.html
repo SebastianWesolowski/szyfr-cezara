@@ -1,1 +1,19 @@
-<p>encryption-page works!</p>
+<content-container>
+  <div content-slot>
+    <title-component title="ODKODUJ" [decoration]="true"></title-component>
+    <content-component>
+      <p>
+        Wpisz zaszyfrowana wiadomość lub wybierz zaszyfrowany wynik, by go
+        odszyfrować.
+      </p>
+    </content-component>
+    ...input
+    <title-component subtitle="ODKODOWANE WIADMOMOŚCI"></title-component>
+    ...tab
+    <title-component subtitle="WYNIKI SZYFROWANIA"></title-component>
+    ...tab
+  </div>
+  <div image-slot>
+    <img src="/assets/image/bg_image_encryption.png" />
+  </div>
+</content-container>
