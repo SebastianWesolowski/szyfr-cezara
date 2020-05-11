@@ -3,14 +3,14 @@ import { IItemMenu } from '../models/i-item-menu';
 export const MenuItemList: IItemMenu[] = [
   {
     displayContent: 'Informacje',
-    link: 'informacje'
+    link: '/informacje'
   },
   {
     displayContent: 'Zaszyfruj',
-    link: 'zaszyfruj'
+    link: '/zaszyfruj'
   },
   {
     displayContent: 'Odszyfruj',
-    link: 'odszyfruj'
+    link: '/odszyfruj'
   }
 ];

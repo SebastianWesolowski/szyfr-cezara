@@ -4,13 +4,13 @@ import { IItemMenu } from 'src/app/models/i-item-menu';
 import { MenuItemService } from 'src/app/services/menu-item.service';
 
 @Component({
-  selector: 'main-menu-component',
-  templateUrl: './main-menu-component.component.html',
-  styleUrls: ['./main-menu-component.component.scss']
+  selector: 'menu-component',
+  templateUrl: './menu-component.component.html',
+  styleUrls: ['./menu-component.component.scss']
 })
-export class MainMenuComponentComponent implements OnInit, OnDestroy {
-  public MenuItemList: IItemMenu[] = this._menuItemService.getMenuList();
+export class MenuComponentComponent implements OnInit, OnDestroy {
   public activeMenuItem: IItemMenu;
+  public MenuItemList: IItemMenu[] = this._menuItemService.getMenuList();
   private _subscriptions: Subscription[] = [];
 
   constructor(private _menuItemService: MenuItemService) {}
