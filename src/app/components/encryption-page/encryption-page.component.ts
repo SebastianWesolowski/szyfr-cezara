@@ -6,10 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./encryption-page.component.scss']
 })
 export class EncryptionPageComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
+  ngOnInit(): void {}
 
-  ngOnInit(): void {
+  newValue(value) {
+    console.log(value);
   }
-
 }

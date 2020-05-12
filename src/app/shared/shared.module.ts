@@ -5,6 +5,8 @@ import { TitleComponentComponent } from './components/title-component/title-comp
 import { ContentComponentComponent } from './components/content-component/content-component.component';
 import { ButtonComponentComponent } from './components/button-component/button-component.component';
 import { ContentContainerComponent } from './components/content-container/content-container.component';
+import { ArrowIconComponent } from './components/arrow-icon/arrow-icon.component';
+import { InputComponentComponent } from './components/input-component/input-component.component';
 
 @NgModule({
   imports: [CommonModule, FormsModule, ReactiveFormsModule],
@@ -12,13 +14,18 @@ import { ContentContainerComponent } from './components/content-container/conten
     TitleComponentComponent,
     ContentComponentComponent,
     ButtonComponentComponent,
-    ContentContainerComponent
+    ContentContainerComponent,
+    ArrowIconComponent,
+    InputComponentComponent
   ],
   exports: [
+    ArrowIconComponent,
     TitleComponentComponent,
     ContentComponentComponent,
     ButtonComponentComponent,
-    ContentContainerComponent
+    ContentContainerComponent,
+    ArrowIconComponent,
+    InputComponentComponent
   ]
 })
 export class SharedModule {}

@@ -6,7 +6,10 @@
         Wpisz widomość do zaszyfrowania
       </p>
     </content-component>
-    ...input
+    <input-component
+      placeholder="Wpisz widomość do zaszyfrowania"
+      (inputValueChange)="newValue($event)"
+    ></input-component>
     <title-component subtitle="WYNIKI SZYFROWANIA"></title-component>
     ...tab
   </div>

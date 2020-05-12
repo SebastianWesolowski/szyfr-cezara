@@ -1,21 +1,17 @@
 @import './src/assets/colors';
-.button-component {
+.input-component__container {
   height: 64px;
-  border: solid 2px $color5;
+  width: 100%;
+  max-width: 850px;
+
   position: relative;
-  display: flex;
+  display: inline-flex;
   padding: 0;
   margin: 0;
   cursor: pointer;
   box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
     0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
   transition: 150ms ease-out;
-  background: transparent;
-
-  &:focus {
-    border: solid 2px $color6;
-    outline: none;
-  }
 
   &:hover {
     box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
@@ -23,8 +19,10 @@
     transition: 150ms ease-out;
   }
 }
-
-.button-component__content {
+.input-component__input {
+  width: calc(100%);
+  padding: 15px 17px;
+  border: solid 2px $color5;
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
@@ -32,14 +30,21 @@
   line-height: 30px;
   letter-spacing: 0.06em;
   color: $color3;
-  padding: 15px 17px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: transparent;
+  &:focus {
+    border: solid 2px $color6;
+    outline: none;
+  }
 }
-
-.button-component__arrow-container {
+.input-component__arrow-container {
   width: 64px;
-  height: 60px;
+  height: 64px;
   background: $color5;
-  position: relative;
+  position: absolute;
   right: 0;
   top: 0;
 }

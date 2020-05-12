@@ -6,10 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./decryption-page.component.scss']
 })
 export class DecryptionPageComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
+  ngOnInit(): void {}
 
-  ngOnInit(): void {
+  newValue(value) {
+    console.log(value);
   }
-
 }

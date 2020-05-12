@@ -7,7 +7,10 @@
         odszyfrować.
       </p>
     </content-component>
-    ...input
+    <input-component
+      placeholder="Wpisz widomość do od odszyfrowania"
+      (inputValueChange)="newValue($event)"
+    ></input-component>
     <title-component subtitle="ODKODOWANE WIADMOMOŚCI"></title-component>
     ...tab
     <title-component subtitle="WYNIKI SZYFROWANIA"></title-component>
