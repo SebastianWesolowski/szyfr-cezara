@@ -1,6 +1,4 @@
-.active {
-  background: red;
-}
+@import './src/assets/colors';
 
 .menu-component__container {
   display: grid;
@@ -10,6 +8,39 @@
 }
 
 .menu-component__nav {
-  align-items: center;
+  grid-gap: 10px;
   display: flex;
+}
+
+button {
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 27px;
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  color: $color0;
+  cursor: pointer;
+
+  &:hover {
+    color: $color5;
+  }
+
+  &:not(:last-child) {
+    margin-right: 40px;
+  }
+
+  &:focus {
+    color: $color4;
+    outline: none;
+  }
+
+  &.active {
+    color: $color5;
+    text-decoration: underline;
+    font-weight: 800;
+  }
 }
