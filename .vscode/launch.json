@@ -9,6 +9,14 @@
       "webRoot": "${workspaceFolder}",
       "skipFiles": [
         "node_modules/**/*.js",
+        "**/styles.js",
+        "**/runtime.js",
+        "**/polifills.js",
+        "**/main.js",
+        "**/vendor.js",
+        "lib/**/*.js",
+        "async_hooks.js",
+        "inspector_async_hook.js"
       ],
     },
   ]

@@ -1,8 +1,8 @@
 @import './src/assets/colors';
 .title-component__title {
-  font-family: Playfair Display;
+  font-family: 'Playfair Display', serif;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 50px;
   line-height: 67px;
   letter-spacing: 0.06em;
@@ -12,9 +12,9 @@
   }
 }
 .title-component__subtitle {
-  font-family: Playfair Display;
+  font-family: 'Playfair Display', serif;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 40px;
   line-height: 53px;
   letter-spacing: 0.06em;

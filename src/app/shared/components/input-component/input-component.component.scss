@@ -1,0 +1,51 @@
+@import './src/assets/colors';
+.input-component__container {
+  height: 64px;
+  width: 100%;
+  max-width: 850px;
+
+  position: relative;
+  display: inline-flex;
+  padding: 0;
+  margin: 0 0 30px 0;
+
+  cursor: pointer;
+  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+  transition: 150ms ease-out;
+
+  &:hover {
+    box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+      0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+    transition: 150ms ease-out;
+  }
+}
+.input-component__input {
+  width: calc(100%);
+  padding: 15px 17px;
+  border: solid 2px $color5;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  color: $color3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: transparent;
+  &:focus {
+    border: solid 2px $color6;
+    outline: none;
+  }
+}
+.input-component__arrow-container {
+  width: 64px;
+  height: 64px;
+  background: $color5;
+  position: absolute;
+  right: 0;
+  top: 0;
+}

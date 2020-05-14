@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { IItemResult } from 'src/app/models/i-item-result';
+import { DecryptionItemService } from 'src/app/services/decryption-item.service';
 
 @Component({
   selector: 'decryption-page',
@@ -6,10 +8,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./decryption-page.component.scss']
 })
 export class DecryptionPageComponent implements OnInit {
+  public decryptionItemList: IItemResult[];
 
-  constructor() { }
-
-  ngOnInit(): void {
+  constructor(private _decryptionItemService: DecryptionItemService) {
+    this.decryptionItemList = this._decryptionItemService.getDecryptionList();
   }
 
+  ngOnInit(): void {}
+
+  newValue(value) {
+    console.log(value);
+  }
 }
