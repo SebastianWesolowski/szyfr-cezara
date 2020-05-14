@@ -9,20 +9,15 @@ import { EncryptionItemService } from 'src/app/services/encryption-item.service'
   styleUrls: ['./encryption-page.component.scss']
 })
 export class EncryptionPageComponent implements OnInit {
-  public decryptionItemList: IItemResult[];
   public encryptionItemList: IItemResult[];
 
-  constructor(
-    private _decryptionItemService: DecryptionItemService,
-    private _encryptionItemService: EncryptionItemService
-  ) {
-    this.decryptionItemList = this._decryptionItemService.getDecryptionList();
+  constructor(private _encryptionItemService: EncryptionItemService) {
     this.encryptionItemList = this._encryptionItemService.getEncryptionList();
   }
 
   ngOnInit(): void {}
 
-  newValue(value) {
-    console.log(value);
+  encryptionValue(value) {
+    this._encryptionItemService.encryptionNewValue(value);
   }
 }

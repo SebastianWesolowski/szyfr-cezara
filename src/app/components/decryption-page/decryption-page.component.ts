@@ -17,7 +17,6 @@ export class DecryptionPageComponent implements OnInit {
   ngOnInit(): void {}
 
   decryptionValue(value) {
-    const test = this._decryptionItemService.decryptionNewValue(value);
-    console.log(test);
+    this._decryptionItemService.decryptionNewValue(value);
   }
 }
