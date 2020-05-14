@@ -8,7 +8,7 @@
     </content-component>
     <input-component
       placeholder="Wpisz widomość do zaszyfrowania"
-      (inputValueChange)="newValue($event)"
+      (inputValueChange)="decryptionValue($event)"
     ></input-component>
     <title-component subtitle="WYNIKI SZYFROWANIA"></title-component>
     <result-row-list [result]="decryptionItemList"></result-row-list>
