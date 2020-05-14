@@ -12,6 +12,8 @@ import { DecryptionPageComponent } from './components/decryption-page/decryption
 import { EncryptionPageComponent } from './components/encryption-page/encryption-page.component';
 import { MenuComponentComponent } from './components/menu-component/menu-component.component';
 import { MenuItemService } from './services/menu-item.service';
+import { DecryptionItemService } from './services/decryption-item.service';
+import { EncryptionItemService } from './services/encryption-item.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +24,7 @@ import { MenuItemService } from './services/menu-item.service';
     MenuComponentComponent
   ],
   imports: [BrowserModule, FormsModule, SharedModule, routesModule],
-  providers: [MenuItemService],
+  providers: [MenuItemService, DecryptionItemService, EncryptionItemService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

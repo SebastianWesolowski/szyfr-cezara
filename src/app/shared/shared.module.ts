@@ -7,6 +7,8 @@ import { ButtonComponentComponent } from './components/button-component/button-c
 import { ContentContainerComponent } from './components/content-container/content-container.component';
 import { ArrowIconComponent } from './components/arrow-icon/arrow-icon.component';
 import { InputComponentComponent } from './components/input-component/input-component.component';
+import { ResultOneRowComponent } from './components/result-one-row/result-one-row.component';
+import { ResultRowListComponent } from './components/result-row-list/result-row-list.component';
 
 @NgModule({
   imports: [CommonModule, FormsModule, ReactiveFormsModule],
@@ -16,7 +18,9 @@ import { InputComponentComponent } from './components/input-component/input-comp
     ButtonComponentComponent,
     ContentContainerComponent,
     ArrowIconComponent,
-    InputComponentComponent
+    InputComponentComponent,
+    ResultOneRowComponent,
+    ResultRowListComponent
   ],
   exports: [
     ArrowIconComponent,
@@ -25,7 +29,9 @@ import { InputComponentComponent } from './components/input-component/input-comp
     ButtonComponentComponent,
     ContentContainerComponent,
     ArrowIconComponent,
-    InputComponentComponent
+    ResultOneRowComponent,
+    InputComponentComponent,
+    ResultRowListComponent
   ]
 })
 export class SharedModule {}

@@ -12,9 +12,9 @@
       (inputValueChange)="newValue($event)"
     ></input-component>
     <title-component subtitle="ODKODOWANE WIADMOMOŚCI"></title-component>
-    ...tab
+    <result-row-list [result]="decryptionItemList"></result-row-list>
     <title-component subtitle="WYNIKI SZYFROWANIA"></title-component>
-    ...tab
+    <result-row-list [result]="encryptionItemList"></result-row-list>
   </div>
   <div image-slot>
     <img src="/assets/image/bg_image_encryption.png" />
