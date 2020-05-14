@@ -1,0 +1,13 @@
+<div class="input-component__container">
+  <input
+    (keyup.enter)="newValue($event)"
+    (blur)="newValue($event)"
+    type="text"
+    class="input-component__input"
+    id="exampleInputEmail1"
+    placeholder="{{ placeholder }}"
+  />
+  <div class="input-component__arrow-container">
+    <arrow-icon></arrow-icon>
+  </div>
+</div>

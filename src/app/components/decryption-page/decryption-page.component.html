@@ -6,9 +6,12 @@
         Wpisz widomość do zaszyfrowania
       </p>
     </content-component>
-    ...input
+    <input-component
+      placeholder="Wpisz widomość do zaszyfrowania"
+      (inputValueChange)="newValue($event)"
+    ></input-component>
     <title-component subtitle="WYNIKI SZYFROWANIA"></title-component>
-    ...tab
+    <result-row-list [result]="decryptionItemList"></result-row-list>
   </div>
   <div image-slot>
     <img src="/assets/image/bg_image_decryption.png" />
