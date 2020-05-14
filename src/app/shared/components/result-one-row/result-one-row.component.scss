@@ -7,10 +7,10 @@
   grid-gap: 30px;
   padding: 30px;
 
-  &.mode-dark {
+  &.mode--dark {
     background: $color7;
   }
-  &.mode-light {
+  &.mode--light {
     background: $color8;
   }
 }
@@ -19,9 +19,9 @@
 }
 
 .result-one-row__content {
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 20px;
   line-height: 30px;
   letter-spacing: 0.06em;

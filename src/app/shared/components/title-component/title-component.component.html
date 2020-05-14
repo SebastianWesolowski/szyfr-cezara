@@ -1,7 +1,7 @@
 <div
   *ngIf="title"
   class="title-component__title"
-  [ngClass]="!subtitle ? 'mod--padding' : ''"
+  [ngClass]="{ 'mod--padding': !subtitle }"
 >
   {{ title }}
 </div>

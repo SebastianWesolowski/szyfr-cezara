@@ -13,9 +13,9 @@
 }
 
 button {
-  font-family: Avenir;
+  font-family: 'Nunito', sans-serif;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 20px;
   line-height: 27px;
   display: flex;
@@ -38,7 +38,7 @@ button {
     outline: none;
   }
 
-  &.active {
+  &.mod--active {
     color: $color5;
     text-decoration: underline;
     font-weight: 800;
