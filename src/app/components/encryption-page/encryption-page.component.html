@@ -9,10 +9,8 @@
     </content-component>
     <input-component
       placeholder="Wpisz widomość do od odszyfrowania"
-      (inputValueChange)="newValue($event)"
+      (inputValueChange)="encryptionValue($event)"
     ></input-component>
-    <title-component subtitle="ODKODOWANE WIADMOMOŚCI"></title-component>
-    <result-row-list [result]="decryptionItemList"></result-row-list>
     <title-component subtitle="WYNIKI SZYFROWANIA"></title-component>
     <result-row-list [result]="encryptionItemList"></result-row-list>
   </div>
