@@ -1,14 +1,15 @@
-<img src="./readme-img/bg-readme.jpg" alt="Caesar cipher banner" align="center" />
+<img src="./readme-img/bg-readme.jpg" alt="Caesar cipher banner" style="margin-bottom:-75px" align="center" />
 
 <div align="center"><h1>Caesar cipher</h1></div>
 <div align="center">Application for encrypting and decrypting user entered text</div>
-
-<p align="center">
-  <a href="https://cezar.wesolowski.dev/">Online Website</a>  / <a href="CHANGELOG.md">Change Log</a>
-</p>
-
+</br>
 <div align="center">
-  <sub>Created by <a href="https://wesolowski.dev">Sebastian Wesołowski</a>, using the following technologies:
+  <a href="https://cezar.wesolowski.dev/">Online Website</a>  / <a href="CHANGELOG.md">Change Log</a>
+</div>
+</br>
+<div align="center">
+ Created by <a href="https://wesolowski.dev">Sebastian Wesołowski</a>, using the following technologies:
+</br>
 
 **Framework** / Angular / **Languages** / JavaScript / TypeScript / SCSS / HTML
 / **Tools** / Git / GitHub / npm / prettier / husky / **Libraries** / RxJS /
