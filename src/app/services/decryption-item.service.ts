@@ -45,7 +45,7 @@ export class DecryptionItemService {
     const newDecryptionObject = {
       id: this.getnewIdDecryptionList(),
       content: decryptionValue.join(''),
-      icon: 'icon'
+      iconId: Math.ceil(Math.random() * 14)
     };
 
     this.decryptionItemList.push(newDecryptionObject);

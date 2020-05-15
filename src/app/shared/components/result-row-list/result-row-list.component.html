@@ -2,7 +2,7 @@
   <result-one-row
     *ngFor="let resultItem of result"
     [content]="resultItem.content"
-    [icon]="resultItem.icon"
+    [iconId]="resultItem.iconId"
     [mode]="resultItem.id % 2 ? true : false"
   ></result-one-row>
 </div>

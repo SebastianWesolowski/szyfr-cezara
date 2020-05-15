@@ -1,0 +1,81 @@
+@font-face {
+  font-family: 'fontweb';
+  src: url('src/assets/font/fontweb.eot');
+  src: url('src/assets/font/fontweb.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^='icon-']:before,
+[class*=' icon-']:before {
+  font-family: 'fontweb';
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  text-align: center;
+  /* opacity: .8; */
+
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-1:before {
+  content: '\e807';
+}
+.icon-2:before {
+  content: '\e808';
+}
+.icon-3:before {
+  content: '\e809';
+}
+.icon-4:before {
+  content: '\e80a';
+}
+.icon-5:before {
+  content: '\e80b';
+}
+.icon-6:before {
+  content: '\e80c';
+}
+.icon-7:before {
+  content: '\e80d';
+}
+.icon-8:before {
+  content: '\e80e';
+}
+.icon-9:before {
+  content: '\e80f';
+}
+.icon-10:before {
+  content: '\e810';
+}
+.icon-11:before {
+  content: '\e811';
+}
+.icon-12:before {
+  content: '\e812';
+}
+.icon-13:before {
+  content: '\e813';
+}
+.icon-14:before {
+  content: '\e814';
+}
