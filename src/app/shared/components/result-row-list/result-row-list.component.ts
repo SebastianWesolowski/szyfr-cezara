@@ -1,12 +1,12 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { IItemResult } from 'src/app/models/i-item-result';
+import { IItemSentence, TypeCipherEnum } from 'src/app/models/i-item-sentence';
 @Component({
   selector: 'result-row-list',
   templateUrl: './result-row-list.component.html',
   styleUrls: ['./result-row-list.component.scss']
 })
 export class ResultRowListComponent implements OnInit {
-  @Input() result: IItemResult[];
+  @Input() result: IItemSentence[];
 
   constructor() {}
 

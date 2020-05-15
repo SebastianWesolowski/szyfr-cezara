@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { IItemResult } from 'src/app/models/i-item-result';
-import { DecryptionItemService } from 'src/app/services/decryption-item.service';
+import { IItemSentence, TypeCipherEnum } from 'src/app/models/i-item-sentence';
+import { CipherSystemService } from 'src/app/services/cipher-system.service';
 
 @Component({
   selector: 'decryption-page',
@@ -8,15 +8,18 @@ import { DecryptionItemService } from 'src/app/services/decryption-item.service'
   styleUrls: ['./decryption-page.component.scss']
 })
 export class DecryptionPageComponent implements OnInit {
-  public decryptionItemList: IItemResult[];
+  public decryptionItemList: IItemSentence[];
 
-  constructor(private _decryptionItemService: DecryptionItemService) {
-    this.decryptionItemList = this._decryptionItemService.getDecryptionList();
+  constructor(private _cipherSystemService: CipherSystemService) {
+    this.decryptionItemList = this._cipherSystemService.getDecryptionList();
   }
 
   ngOnInit(): void {}
 
   decryptionValue(value) {
-    this._decryptionItemService.decryptionNewValue(value);
+    this._cipherSystemService.newCipherItem(
+      TypeCipherEnum.decryptionnShow,
+      value
+    );
   }
 }
