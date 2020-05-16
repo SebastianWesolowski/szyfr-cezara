@@ -58,17 +58,44 @@ export class CipherSystemService {
       type
     };
 
-    valueInputArray = valueInputArray.map(sentence => {
+    SETTING.type = TypeCipherEnum.decryptionnShow;
+    const decryptionString = valueInputArray.map(sentence => {
       sentence = this.normalize(sentence);
       return this.CipherSystem(sentence.split(''), SETTING).join('');
     });
 
-    console.log(valueInputArray.join(' '));
+    SETTING.type = TypeCipherEnum.encryptionShow;
+    const encryptionString = valueInputArray.map(sentence => {
+      sentence = this.normalize(sentence);
+      return this.CipherSystem(sentence.split(''), SETTING).join('');
+    });
+
+    const newObj = {
+      id: this.getnewIdDecryptionList(),
+      decryption: decryptionString.join(' '),
+      encryption: encryptionString.join(' '),
+      iconId: Math.ceil(Math.random() * 14),
+      encryptionShow: false,
+      decryptionnShow: false
+    };
+
+    if (type === TypeCipherEnum.decryptionnShow) {
+      newObj.decryptionnShow = true;
+    }
+    if (type === TypeCipherEnum.encryptionShow) {
+      newObj.encryptionShow = true;
+    }
+    this.sequenceItemList.push(newObj);
+
     return this.sequenceItemList;
   }
 
   isNumeric(n: any) {
     return !isNaN(parseFloat(n)) && isFinite(n);
+  }
+
+  getnewIdDecryptionList(): number {
+    return this.sequenceItemList.length + 1;
   }
 
   CipherSystem(oneWord, SETTING) {

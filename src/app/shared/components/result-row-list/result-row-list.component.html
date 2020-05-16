@@ -1,7 +1,8 @@
 <div class="result-row-list">
+  <!-- TODO: Tutaj jest problem -->
   <result-one-row
     *ngFor="let resultItem of result"
-    [content]="resultItem.content"
+    [content]="test(resultItem)"
     [iconId]="resultItem.iconId"
     [mode]="resultItem.id % 2 ? true : false"
   ></result-one-row>

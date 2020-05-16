@@ -36,6 +36,6 @@ const routes: Routes = [
 ];
 
 export const routesModule = RouterModule.forRoot(routes, {
-  enableTracing: true,
+  enableTracing: false,
   useHash: false
 });

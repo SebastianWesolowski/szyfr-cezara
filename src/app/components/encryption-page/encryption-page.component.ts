@@ -11,7 +11,7 @@ export class EncryptionPageComponent implements OnInit {
   public encryptionItemList: IItemSentence[];
 
   constructor(private _cipherSystemService: CipherSystemService) {
-    this.encryptionItemList = this._cipherSystemService.getEncryptionList();
+    this.encryptionItemList = this._cipherSystemService.getSequenceList();
   }
 
   ngOnInit(): void {}
