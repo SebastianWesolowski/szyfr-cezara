@@ -1,5 +1,9 @@
 @import './src/assets/colors';
-
+.menu-component__logo {
+  line-height: 50px;
+  font-size: 50px;
+  color: $color5;
+}
 .menu-component__container {
   display: grid;
   height: 50px;
