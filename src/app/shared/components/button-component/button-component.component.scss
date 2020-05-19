@@ -1,6 +1,6 @@
 @import './src/assets/colors';
 .button-component {
-  height: 64px;
+  height: 40px;
   border: solid 2px $color5;
   position: relative;
   display: flex;
@@ -28,18 +28,34 @@
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 30px;
-  letter-spacing: 0.06em;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.03em;
   color: $color3;
-  padding: 15px 17px;
+  padding: 8px 10px;
 }
 
 .button-component__arrow-container {
-  width: 64px;
-  height: 60px;
+  width: 40px;
+  height: 36px;
   background: $color5;
   position: relative;
   right: 0;
   top: 0;
+}
+
+@media (min-width: 768px) {
+  .button-component {
+    height: 64px;
+  }
+  .button-component__content {
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    padding: 15px 17px;
+  }
+  .button-component__arrow-container {
+    width: 64px;
+    height: 60px;
+  }
 }

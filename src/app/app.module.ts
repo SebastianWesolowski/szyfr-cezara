@@ -12,8 +12,7 @@ import { DecryptionPageComponent } from './components/decryption-page/decryption
 import { EncryptionPageComponent } from './components/encryption-page/encryption-page.component';
 import { MenuComponentComponent } from './components/menu-component/menu-component.component';
 import { MenuItemService } from './services/menu-item.service';
-import { DecryptionItemService } from './services/decryption-item.service';
-import { EncryptionItemService } from './services/encryption-item.service';
+import { CipherSystemService } from './services/cipher-system.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +23,7 @@ import { EncryptionItemService } from './services/encryption-item.service';
     MenuComponentComponent
   ],
   imports: [BrowserModule, FormsModule, SharedModule, routesModule],
-  providers: [MenuItemService, DecryptionItemService, EncryptionItemService],
+  providers: [MenuItemService, CipherSystemService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

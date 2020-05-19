@@ -6,11 +6,18 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./result-one-row.component.scss']
 })
 export class ResultOneRowComponent implements OnInit {
-  @Input() icon: string;
-  @Input() content: string;
+  @Input() iconId: string;
+  @Input()
+  set content(content) {
+    this.showResult = content.showResult;
+    this.hiddenResult = content.hiddenResult;
+  }
+
   @Input() mode: boolean;
 
-  public id = 1;
+  public showResult: string;
+  public hiddenResult: string;
+
   constructor() {}
 
   ngOnInit(): void {}
