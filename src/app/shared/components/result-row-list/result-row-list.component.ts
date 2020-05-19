@@ -9,26 +9,16 @@ import { IItemSentence, TypeCipherEnum } from 'src/app/models/i-item-sentence';
 export class ResultRowListComponent implements OnInit {
   @Input() result: IItemSentence[];
 
-  // @Input()
-  // set result(result: IItemSentence[]) {
-  //   this.result = result;
-  //   console.log(result);
-  // }
+  constructor() {}
 
-  constructor() {
-    console.log(this.result);
-  }
-
-  ngOnInit(): void {
-    // console.log(this.result);
-  }
+  ngOnInit(): void {}
 
   test(resultItem: IItemSentence) {
-    if ((resultItem.encryptionShow = true)) {
+    if (resultItem.encryptionShow === true) {
       return resultItem.encryption;
     }
 
-    if ((resultItem.decryptionnShow = true)) {
+    if (resultItem.decryptionnShow === true) {
       return resultItem.decryption;
     }
   }
