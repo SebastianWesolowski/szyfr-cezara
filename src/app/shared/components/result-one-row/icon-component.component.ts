@@ -6,8 +6,14 @@ import { Component, OnInit, ViewEncapsulation, Input } from '@angular/core';
   styles: [
     `
       .icon-component {
-        line-height: 40px;
-        font-size: 40px;
+        line-height: 30px;
+        font-size: 30px;
+      }
+      @media (min-width: 768px) {
+        .icon-component {
+          line-height: 40px;
+          font-size: 40px;
+        }
       }
     `
   ],
