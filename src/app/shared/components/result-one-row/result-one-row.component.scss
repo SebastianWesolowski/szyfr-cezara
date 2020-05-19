@@ -6,12 +6,21 @@
   grid-template-columns: 40px 1fr;
   grid-gap: 30px;
   padding: 30px;
+  cursor: pointer;
 
-  &.mode--dark {
+  &.mode--dark,
+  &.mode--dark .mode--hidden {
     background: $color7;
   }
-  &.mode--light {
+  &.mode--light,
+  &.mode--light .mode--hidden {
     background: $color8;
+  }
+
+  &:hover {
+    .mode--hidden {
+      display: inline-block;
+    }
   }
 }
 .result-one-row__icon {
@@ -27,4 +36,11 @@
   line-height: 30px;
   letter-spacing: 0.06em;
   color: $color3;
+  position: relative;
+
+  .mode--hidden {
+    position: absolute;
+    display: none;
+    width: 100%;
+  }
 }

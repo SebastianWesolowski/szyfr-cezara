@@ -29,7 +29,9 @@ export class MenuComponentComponent implements OnInit, OnDestroy {
 
   ngOnDestroy() {
     this._subscriptions.forEach(oneSubscription => {
-      oneSubscription.unsubscribe();
+      if (oneSubscription) {
+        oneSubscription.unsubscribe();
+      }
     });
   }
 }

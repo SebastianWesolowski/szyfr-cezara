@@ -7,8 +7,16 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class ResultOneRowComponent implements OnInit {
   @Input() iconId: string;
-  @Input() content: string;
+  @Input()
+  set content(content) {
+    this.showResult = content.showResult;
+    this.hiddenResult = content.hiddenResult;
+  }
+
   @Input() mode: boolean;
+
+  public showResult: string;
+  public hiddenResult: string;
 
   constructor() {}
 
