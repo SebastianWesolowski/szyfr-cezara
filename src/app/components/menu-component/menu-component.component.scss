@@ -1,15 +1,22 @@
 @import './src/assets/colors';
-
 .menu-component__container {
   display: grid;
-  height: 50px;
-  grid-template-columns: 50px auto;
-  grid-gap: 40px;
+  // grid-template-columns: 50px auto;
+  grid-gap: 20px;
+  z-index: 2;
+  position: relative;
+}
+
+.menu-component__logo {
+  line-height: 50px;
+  font-size: 50px;
+  color: $color5;
 }
 
 .menu-component__nav {
   grid-gap: 10px;
   display: flex;
+  flex-direction: column;
 }
 
 button {
@@ -24,6 +31,7 @@ button {
   border: none;
   color: $color0;
   cursor: pointer;
+  padding-bottom: 12px;
 
   &:hover {
     color: $color5;
@@ -42,5 +50,20 @@ button {
     color: $color5;
     text-decoration: underline;
     font-weight: 800;
+  }
+}
+
+@media (min-width: 768px) {
+  button {
+    padding-bottom: 2px;
+  }
+  .menu-component__nav {
+    flex-direction: row;
+  }
+}
+@media (min-width: 1024px) {
+  .menu-component__container {
+    height: 50px;
+    grid-template-columns: 50px auto;
   }
 }

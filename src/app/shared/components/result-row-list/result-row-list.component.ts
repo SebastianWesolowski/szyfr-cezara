@@ -1,4 +1,3 @@
-import { EncryptionItemList } from './../../../mocks/mock-encryption-list';
 import { Component, OnInit, Input } from '@angular/core';
 import { IItemSentence, TypeCipherEnum } from 'src/app/models/i-item-sentence';
 @Component({

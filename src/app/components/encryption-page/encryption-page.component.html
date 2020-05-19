@@ -8,11 +8,13 @@
       </p>
     </content-component>
     <input-component
-      placeholder="Wpisz widomość do od odszyfrowania"
+      placeholder="Wpisz treść do odszyfrowania"
       (inputValueChange)="encryptionValue($event)"
     ></input-component>
-    <title-component subtitle="WYNIKI SZYFROWANIA"></title-component>
-    <result-row-list [result]="encryptionItemList"></result-row-list>
+    <div *ngIf="encryptionItemList.length > 0">
+      <title-component subtitle="WYNIKI SZYFROWANIA"></title-component>
+      <result-row-list [result]="encryptionItemList"></result-row-list>
+    </div>
   </div>
   <div image-slot>
     <img src="/assets/image/bg_image_encryption.png" />

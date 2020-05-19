@@ -1,6 +1,7 @@
 @import './src/assets/colors';
+
 .input-component__container {
-  height: 64px;
+  height: 40px;
   width: 100%;
   max-width: 850px;
 
@@ -20,15 +21,16 @@
     transition: 150ms ease-out;
   }
 }
+
 .input-component__input {
   width: calc(100%);
-  padding: 15px 17px;
+  padding: 8px 10px;
   border: solid 2px $color5;
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 12px;
+  line-height: 20px;
   letter-spacing: 0.06em;
   color: $color3;
   position: absolute;
@@ -41,11 +43,28 @@
     outline: none;
   }
 }
+
 .input-component__arrow-container {
-  width: 64px;
-  height: 64px;
+  width: 40px;
+  height: 40px;
   background: $color5;
   position: absolute;
   right: 0;
   top: 0;
+}
+@media (min-width: 768px) {
+  .input-component__input {
+    padding: 15px 17px;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+  }
+  .input-component__container {
+    height: 64px;
+  }
+
+  .input-component__arrow-container {
+    width: 64px;
+    height: 64px;
+  }
 }
