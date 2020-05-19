@@ -15,11 +15,17 @@ export class ResultRowListComponent implements OnInit {
 
   test(resultItem: IItemSentence) {
     if (resultItem.encryptionShow === true) {
-      return resultItem.encryption;
+      return {
+        showResult: resultItem.encryption,
+        hiddenResult: resultItem.decryption
+      };
     }
 
     if (resultItem.decryptionnShow === true) {
-      return resultItem.decryption;
+      return {
+        showResult: resultItem.decryption,
+        hiddenResult: resultItem.encryption
+      };
     }
   }
 }

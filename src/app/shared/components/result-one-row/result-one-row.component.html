@@ -2,7 +2,11 @@
   <div class="result-one-row__icon">
     <icon-component [idIcon]="iconId"></icon-component>
   </div>
+
   <div class="result-one-row__content">
-    {{ content }}
+    <span class="mode--hidden">
+      {{ hiddenResult }}
+    </span>
+    {{ showResult }}
   </div>
 </div>
