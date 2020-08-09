@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { cesarCipher } from './../util/cipher';
 import { InputSequenceList } from './../mocks/mock-input-sentence-list';
 import { IItemSentence, TypeCipherEnum } from '../models/i-item-sentence';
+// tslint:disable-next-line: import-blacklist
 import { Observable, BehaviorSubject } from 'rxjs';
 
 @Injectable({

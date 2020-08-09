@@ -10,6 +10,7 @@ import { InputComponentComponent } from './components/input-component/input-comp
 import { ResultOneRowComponent } from './components/result-one-row/result-one-row.component';
 import { ResultRowListComponent } from './components/result-row-list/result-row-list.component';
 import { IconComponentComponent } from './components/result-one-row/icon-component.component';
+import { ProjectCounterComponent } from './components/project-counter/project-counter.component';
 
 @NgModule({
   imports: [CommonModule, FormsModule, ReactiveFormsModule],
@@ -22,7 +23,8 @@ import { IconComponentComponent } from './components/result-one-row/icon-compone
     InputComponentComponent,
     ResultOneRowComponent,
     ResultRowListComponent,
-    IconComponentComponent
+    IconComponentComponent,
+    ProjectCounterComponent
   ],
   exports: [
     ArrowIconComponent,

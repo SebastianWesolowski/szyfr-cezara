@@ -6,7 +6,7 @@ import { CipherSystemService } from 'src/app/services/cipher-system.service';
 @Component({
   selector: 'decryption-page',
   templateUrl: './decryption-page.component.html',
-  styleUrls: ['./decryption-page.component.scss']
+  styleUrls: []
 })
 export class DecryptionPageComponent implements OnInit, OnDestroy {
   public decryptionItemList: IItemSentence[];

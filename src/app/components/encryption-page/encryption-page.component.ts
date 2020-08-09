@@ -6,7 +6,7 @@ import { Subscription } from 'rxjs/internal/Subscription';
 @Component({
   selector: 'encryption-page',
   templateUrl: './encryption-page.component.html',
-  styleUrls: ['./encryption-page.component.scss']
+  styleUrls: []
 })
 export class EncryptionPageComponent implements OnInit, OnDestroy {
   public encryptionItemList: IItemSentence[];

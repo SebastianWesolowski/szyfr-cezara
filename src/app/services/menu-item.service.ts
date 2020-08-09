@@ -1,3 +1,4 @@
+// tslint:disable-next-line: import-blacklist
 import { BehaviorSubject, Observable } from 'rxjs';
 import { MenuItemList } from './../mocks/mock-menu-item-list';
 import { Injectable } from '@angular/core';
